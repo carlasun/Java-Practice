@@ -10,5 +10,15 @@ public class PStack {
 		}
 		return -1;
 	}
+	
+	void push(int value){
+		PNode stuff= new PNode(value);
+		stuff.next= top;
+		top = stuff;
+	}
+	
+	PNode peek(){
+		return top;
+	}
 
 }
